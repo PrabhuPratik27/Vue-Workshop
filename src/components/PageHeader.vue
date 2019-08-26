@@ -11,7 +11,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn text dark :to="{name: 'home'}"><v-icon>fas fa-home</v-icon>&nbsp;Home</v-btn>
         <v-btn text dark :to="{name: 'why-vue'}"><v-icon>fab fa-vuejs</v-icon>&nbsp;Why Vue</v-btn>
-        <v-btn text dark ><v-icon>fas fa-pen</v-icon>&nbsp;Instructions</v-btn>
+        <v-btn text dark :to="{name: 'instructions'}"><v-icon>fas fa-pen</v-icon>&nbsp;Instructions</v-btn>
         <v-btn text dark ><v-icon>fas fa-pen</v-icon>&nbsp;Register</v-btn>
       </v-toolbar-items>
     </v-app-bar>
@@ -52,7 +52,7 @@
             </v-list-item-content>
         </v-list-item>
 
-        <v-list-item dark link color="black">
+        <v-list-item dark link color="black" :to="{name: 'instructions'}">
             <v-list-item-icon>
               <v-icon>fas fa-pen</v-icon>
             </v-list-item-icon>
