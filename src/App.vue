@@ -2,7 +2,7 @@
   <v-app>
     <PageHeader />
     <v-content>
-      <v-container fluid fill-height justify-center class="pa-0"><router-view/></v-container>
+      <v-container fluid fill-height class="pa-0"><router-view/></v-container>
     </v-content>
     <PageFooter />
   </v-app>
@@ -16,15 +16,6 @@ export default {
   components: {
     PageHeader,
     PageFooter
-  },
-  data: () => ({
-    //
-  }),
+  }
 };
 </script>
-
-<style>
-  div {
-    margin: 0
-  }
-</style>

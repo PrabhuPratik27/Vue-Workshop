@@ -1,23 +1,28 @@
 <template>
-  <div>
-    <v-parallax :src="require('@/assets/hero.jpeg')" height="600">
+  <div class="mt-0 mb-0">
+    <section>
+      <v-parallax :src="require('@/assets/section.jpg')" height="600">
 
-      <v-layout column align-center justify-center class="white--text" >
+        <v-layout column align-center justify-center class="white--text">
 
-        <img src="../assets/coclogowithname.png" alt="Vuetify.js" height="auto" class="hidden-sm-and-down" width="80%">
-        <img src="../assets/coc_logo.png" alt="Vuetify.js" height="200" class="hidden-md-and-up">
-        <h1 class="white--text mb-2 display-1 text-xs-center">Presents</h1>
-        <img src="../assets/logo.png">
-        <h1 class="white--text mb-2 display-1 text-xs-center">Vue Workshop</h1>
+          <img src="../assets/coclogowithname.png" alt="Vuetify.js" height="auto" class="hidden-sm-and-down" width="80%">
+          <img src="../assets/coc_logo.png" alt="Vuetify.js" height="200" class="hidden-md-and-up">
+          <h1 class="white--text mb-2 display-1 text-center hidden-md-and-up">Community Of Coders</h1>
+          <h1 class="white--text mb-2 display-1 text-center">Presents</h1>
+          <img src="../assets/logo.png" alt="Vuetify.js" height="150" width="auto">
+          <div class="subheading mb-3 text-center">Good software, like wine, takes time ~ Joel Spolsky</div>
 
-      </v-layout>
-    </v-parallax>
+        </v-layout>
+      </v-parallax>
+    </section>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+
+}
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 </style>
