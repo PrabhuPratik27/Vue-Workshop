@@ -11,7 +11,7 @@
           <h1 class="white--text mb-2 display-1 text-center">Presents</h1>
           <img src="../assets/logo.png" alt="Vuetify.js" height="150" width="auto">
           <div class="subheading mb-3 text-center ws1">Vue Workshop</div>
-          <div class="subheading mb-3 text-center ws">Wednesday, 3<sup>rd</sup> September 2019</div>
+          <div class="subheading mb-3 text-center ws">Wednesday, 4<sup>th</sup> September 2019</div>
           <br>
 
         </v-layout>
