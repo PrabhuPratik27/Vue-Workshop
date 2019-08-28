@@ -12,7 +12,7 @@
         <v-btn text dark :to="{name: 'home'}"><v-icon>fas fa-home</v-icon>&nbsp;Home</v-btn>
         <v-btn text dark :to="{name: 'why-vue'}"><v-icon>fab fa-vuejs</v-icon>&nbsp;Why Vue</v-btn>
         <v-btn text dark :to="{name: 'instructions'}"><v-icon>fas fa-pen</v-icon>&nbsp;Instructions</v-btn>
-        <v-btn text dark ><v-icon>fas fa-pen</v-icon>&nbsp;Register</v-btn>
+        <v-btn text dark><a href= 'https://forms.gle/KiHB3yeqXpXUw1RGA' target='blank'><v-icon>fas fa-sign-in-alt</v-icon>&nbsp;Register</a></v-btn>
       </v-toolbar-items>
     </v-app-bar>
 
@@ -20,7 +20,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">
-            Vue Workshop
+            <v-icon @click='drawer = !drawer'>fas fa-times</v-icon>&nbsp;Vue Workshop
           </v-list-item-title>
           <v-list-item-subtitle>
             Nav
@@ -62,9 +62,9 @@
             </v-list-item-content>
         </v-list-item>
 
-        <v-list-item dark link color="black">
+        <v-list-item dark link color="black" @click='open'>
             <v-list-item-icon>
-              <v-icon>fas fa-pen</v-icon>
+              <v-icon>fas fa-sign-in-alt</v-icon>
             </v-list-item-icon>
 
             <v-list-item-content>
@@ -81,9 +81,19 @@
 export default {
   data: () => ({
     drawer: false
-  })
+  }),
+  methods: {
+    open () {
+      window.location = 'https://forms.gle/KiHB3yeqXpXUw1RGA'
+    }
+  }
 }
 </script>
 
 <style scoped>
+ 	a:link, a:visited { 
+  color: white;
+  text-decoration: none;
+  cursor: auto;
+}
 </style>

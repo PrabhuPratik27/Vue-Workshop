@@ -34,7 +34,7 @@
 
               <v-list-item-content>
                 <v-list-item-title v-html="item.title"></v-list-item-title>
-                <v-list-item-subtitle v-html="item.subtitle"></v-list-item-subtitle>
+                <p v-html="item.subtitle"></p>
               </v-list-item-content>
             </v-list-item>
 
@@ -60,32 +60,27 @@ export default {
         {
           avatar: 'fab fa-node-js',
           title: 'Install Node.js',
-          subtitle: "<span class='success--text'>Ali Connors</span> &mdash; I'll be in your neighborhood doing errands this weekend. Do you want to hang out?",
+          subtitle: "<span class='success--text'>Install the newest version of Node.js<br>For Ubuntu: sudo apt install nodejs <br>For Windows:Download the setup from <a href='https://nodejs.org/en/' target='_blank'>here</a></a></span>",
         },
         { divider: true, inset: true },
         {
           avatar: 'fab fa-npm',
-          title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>',
-          subtitle: "<span class='success--text'>to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.",
+          title: 'Install NPM',
+          subtitle: "<span class='success--text'>Make sure you have npm installed<br>Open a terminal and type npm -v to make sure you have npm installed</span>",
         },
         { divider: true, inset: true },
         {
           avatar: 'fab fa-vuejs',
-          title: 'Oui oui',
-          subtitle: "<span class='success--text'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have you ever been?",
+          title: 'Install Vue CLI 3',
+          subtitle: "<span class='success--text'>Install vue cli<br>Type sudo npm install -g @vue/cli</span>",
         },
         { divider: true, inset: true },
         {
-          avatar: '',
-          title: 'Birthday gift',
-          subtitle: "<span class='success--text'>Trevor Hansen</span> &mdash; Have any ideas about what we should get Heidi for her birthday?",
+          avatar: 'fas fa-laptop-code',
+          title: 'Have Laptops',
+          subtitle: "<span class='success--text'>The Workshop will take place in AL004. So laptops are necessary for hands on</span>",
         },
         { divider: true, inset: true },
-        {
-          avatar: '',
-          title: 'Recipe to try',
-          subtitle: "<span class='success--text'>Britta Holt</span> &mdash; We should eat this: Grate, Squash, Corn, and tomatillo Tacos.",
-        },
       ],
     }),
 };
